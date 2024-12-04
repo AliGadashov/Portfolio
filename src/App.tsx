@@ -11,14 +11,8 @@ const App = () => (
         <div className="flex flex-1 overflow-hidden">
             <main className="flex-1 overflow-y-auto">
                 <BodyContent />
-                <BodyContent />
-                <BodyContent />
-                <BodyContent />
-                <BodyContent />
-                <BodyContent />
-
             </main>
-            <aside className="w-1/4 bg-gray-100 border-l border-gray-300 overflow-y-auto">
+            <aside className="w-1/4">
                 <Aside />
             </aside>
         </div>
