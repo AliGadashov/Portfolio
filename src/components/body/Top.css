@@ -1,0 +1,47 @@
+/* Top.css */
+@keyframes expandBorder {
+    0% {
+        height: 24rem;
+        opacity: 1;
+    }
+    100% {
+        height: 30rem;
+        opacity: 0;
+    }
+}
+
+.animate-expandBorder {
+    animation: expandBorder 3s linear infinite;
+}
+
+.delay-0 {
+    animation-delay: 0.4s;
+}
+
+.delay-200 {
+    animation-delay: 0.8s;
+}
+
+.delay-400 {
+    animation-delay: 1.2s;
+}
+
+.delay-600 {
+    animation-delay: 1.8s;
+}
+
+.delay-800 {
+    animation-delay: 2.4s;
+}
+
+.delay-1000 {
+    animation-delay: 3s;
+}
+
+.stop-animation:hover .animate-expandBorder {
+    animation-play-state: paused;
+}
+
+.stop-animation .animate-expandBorder {
+    animation-play-state: running;
+}

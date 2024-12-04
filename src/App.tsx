@@ -5,7 +5,7 @@ import BodyContent from "./components/BodyContent";
 
 const App = () => (
     <div className="App h-screen flex flex-col">
-        <header className="sticky top-0 w-full z-10">
+        <header className="absolute top-0 w-full z-10">
             <Header />
         </header>
         <div className="flex flex-1 overflow-hidden">
