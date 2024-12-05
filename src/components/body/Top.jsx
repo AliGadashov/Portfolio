@@ -36,7 +36,7 @@ const Top = () => {
             {/*Profile image*/}
             <div
                 className="w-96 h-96 border-2 border-black rounded-full flex items-center justify-center relative stop-animation hover:cursor-pointer">
-                <img src="https://via.placeholder.com/150" alt="Profile" className="rounded-full"/>
+                <img src="me2.webp" className="rounded-full"/>
 
                 <div
                     className="absolute w-96 h-96 border-2 border-black rounded-full animate-expandBorder delay-0"></div>
