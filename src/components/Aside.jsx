@@ -25,7 +25,7 @@ const Aside = () => {
     };
 
     return (
-        <aside className="bg-[#FFDB67] text-black pl-8 flex items-center h-screen">
+        <aside className="bg-[#FFDB67] text-black pl-2 flex items-center h-screen">
             <div className="w-full border-l-2 border-[#b19b4d]">
                 <ul className="flex flex-col items-start space-y-1 ">
                     {menuItems.map((item, index) => (

@@ -2,9 +2,9 @@ import React from 'react';
 
 const SectionWrapper = ({ children }) => {
     return (
-        <section className="px-36 py-4 mb-8">
+        <div className="flex flex-col gap-20 px-24 py-4 mt-8">
             {children}
-        </section>
+        </div>
     );
 };
 

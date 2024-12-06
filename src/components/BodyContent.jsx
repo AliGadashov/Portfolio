@@ -1,6 +1,7 @@
 import React from 'react';
 import Top from "./body/Top";
 import SectionWrapper from "./body/SectionWrapper";
+import About from "./body/About";
 
 const BodyContent = () => {
     return (
@@ -11,6 +12,7 @@ const BodyContent = () => {
             <section>
                 <SectionWrapper>
                     <Top/>
+                    <About/>
                 </SectionWrapper>
             </section>
         </div>
