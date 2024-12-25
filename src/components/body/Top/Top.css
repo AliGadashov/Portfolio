@@ -1,11 +1,13 @@
 /* Top.css */
 @keyframes expandBorder {
     0% {
-        height: 24rem;
+        width: 27rem;
+        height: 27rem;
         opacity: 1;
     }
     100% {
-        height: 30rem;
+        width: 27rem;
+        height: 33rem;
         opacity: 0;
     }
 }
@@ -44,4 +46,9 @@
 
 .stop-animation .animate-expandBorder {
     animation-play-state: running;
+}
+
+.profileCircle{
+    width: 27rem;
+    height: 27rem;
 }

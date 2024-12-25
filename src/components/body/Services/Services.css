@@ -1,0 +1,103 @@
+
+
+/* Top.css */
+@keyframes expandBorderForCircle {
+    0% {
+        width: 5rem;
+        height: 5rem;
+        opacity: 1;
+    }
+    100% {
+        width: 5rem;
+        height: 6rem;
+        opacity: 0;
+    }
+}
+
+.animate-expandBorderForCircle {
+    animation: expandBorderForCircle 1.2s linear infinite;
+}
+
+.delay-0 {
+    animation-delay: 0.4s;
+}
+
+.delay-200 {
+    animation-delay: 0.8s;
+}
+
+.delay-400 {
+    animation-delay: 1.2s;
+}
+
+.stop-animation:hover .animate-expandBorderForCircle {
+    animation-play-state: paused;
+}
+
+.stop-animation .animate-expandBorderForCircle {
+    animation-play-state: running;
+}
+
+.animationCircle {
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.card {
+    position: relative;
+    z-index: 1;
+}
+
+.number-with-border {
+
+}
+
+.card::before,
+.card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    z-index: -1;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.card::before {
+    transform: rotate(0deg);
+    background-color: #37113e;
+}
+
+.card::after {
+    transform: rotate(0deg);
+    background-color: #37113e;
+}
+
+
+.card:hover::after {
+    transform: rotate(3deg);
+}
+
+.card:hover::before{
+    transform: rotate(-3deg);
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.custom-dots {
+    display: none !important;
+}
+
+.services-slider .slick-slide {
+    padding: 10px;
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}

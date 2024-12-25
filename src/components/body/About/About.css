@@ -1,17 +1,5 @@
-.text-start::before {
-    content: "About Me";
-    position: absolute;
-    left: 1rem;
-    top: -55%;
-    font-size: 11rem;
-    font-family: 'Noto Serif', serif;
-    color: rgba(0, 0, 0, 0.05);
-    white-space: nowrap;
-}
-
 .experience {
     position: relative;
-    background-color: #FFDB67;
     z-index: 1;
 }
 
@@ -51,12 +39,12 @@
 
 .experience::before {
     transform: rotate(3deg);
-    background-color: #FFDB67;
+    background-color: #37113e;
 }
 
 .experience::after {
     transform: rotate(-3deg);
-    background-color: #FFDB67;
+    background-color: #37113e;
 }
 
 .number-with-border::before {

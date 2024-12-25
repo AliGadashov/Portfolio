@@ -6,3 +6,15 @@
 html {
     font-family: 'Poppins', sans-serif;
 }
+
+.text-start::before {
+    content: attr(data-content);
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    top: -8rem;
+    font-size: 10rem;
+    font-family: 'Noto Serif', serif;
+    color: rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+}

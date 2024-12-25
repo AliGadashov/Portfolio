@@ -1,19 +1,23 @@
 import React from 'react';
-import Top from "./body/Top";
+import Top from "./body/Top/Top";
 import SectionWrapper from "./body/SectionWrapper";
-import About from "./body/About";
+import About from "./body/About/About";
+import Skills from "./body/Skills/Skills";
+import Services from "./body/Services/Services";
 
 const BodyContent = () => {
     return (
         <div
-            className="bg-[#FFDB67] text-black p-6 overflow-y-scroll pt-20"
+            className="bg-bgColor text-black px-6 overflow-y-scroll "
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
             <section>
-                <SectionWrapper>
+                <div className="flex flex-col px-24">
                     <Top/>
                     <About/>
-                </SectionWrapper>
+                    <Services/>
+                    <Skills/>
+                </div>
             </section>
         </div>
     );

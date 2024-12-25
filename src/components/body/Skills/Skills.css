@@ -1,0 +1,9 @@
+.skillOrder{
+    content: attr(data-content);
+    color: rgba(0,0,0,.5);
+    font-size: 2.5rem;
+    white-space: nowrap;
+    display: inline-block;
+    margin-left: 25px;
+    transform: rotate(-90deg);
+}
