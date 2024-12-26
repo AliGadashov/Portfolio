@@ -1,9 +1,9 @@
 import React from 'react';
 import Top from "./body/Top/Top";
-import SectionWrapper from "./body/SectionWrapper";
 import About from "./body/About/About";
 import Skills from "./body/Skills/Skills";
 import Services from "./body/Services/Services";
+import Facts from "./body/Facts/Facts";
 
 const BodyContent = () => {
     return (
@@ -17,6 +17,7 @@ const BodyContent = () => {
                     <About/>
                     <Services/>
                     <Skills/>
+                    <Facts/>
                 </div>
             </section>
         </div>

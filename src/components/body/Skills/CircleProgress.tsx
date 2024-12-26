@@ -6,7 +6,7 @@ interface CircleProgressProps {
 }
 
 const CircleProgress: React.FC<CircleProgressProps> = ({ percentage, label }) => {
-    const radius = 60; // Dairənin radiusu
+    const radius = 60;
     const strokeWidth = 4; // Dairənin xətt qalınlığı
     const circumference = 2 * Math.PI * radius; // Dairənin çevrəsi
     const offset = circumference - (percentage / 100) * circumference;
