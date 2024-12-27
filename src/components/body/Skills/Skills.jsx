@@ -46,10 +46,10 @@ const Skills = () => {
                 <div className=" w-1/3">
                     <div className="text-start border-l-2 border-darkPrimary pl-10 py-6 px-6 relative"
                          data-content="Attainments">
-                        <h2 className="text-4xl font-medium mb-4">Design Skills</h2>
-                        <h2 className="text-xl font-light mb-4">Highlight My Expertise in:</h2>
+                        <h2 className="text-4xl font-medium mb-4 select-none">Design Skills</h2>
+                        <h2 className="text-xl font-light mb-4 select-none">Highlight My Expertise in:</h2>
                     </div>
-                    <div className="skillOrder font-semibold">01.-</div>
+                    <div className="skillOrder font-semibold select-none">01.-</div>
                 </div>
                 <div className="w-2/3  flex justify-between items-center">
                     {designSkillData.map((skill, index) => (
@@ -63,10 +63,10 @@ const Skills = () => {
                 <div className="w-1/2 flex justify-end">
                     <div>
                         <div className="text-start border-l-2 border-darkPrimary pl-10 py-6 px-6 relative">
-                            <h2 className="text-4xl font-medium mb-4">Developer Skills</h2>
-                            <h2 className="text-xl font-light mb-4">Highlight My Expertise in:</h2>
+                            <h2 className="text-4xl font-medium mb-4 select-none">Developer Skills</h2>
+                            <h2 className="text-xl font-light mb-4 select-none">Highlight My Expertise in:</h2>
                         </div>
-                        <div className="skillOrder font-semibold">02.-</div>
+                        <div className="skillOrder font-semibold select-none">02.-</div>
                     </div>
                 </div>
                 <div className="w-1/2  pl-10">
@@ -80,10 +80,10 @@ const Skills = () => {
             <div className="flex flex-row justify-between">
                 <div className=" w-1/3">
                     <div className="text-start border-l-2 border-darkPrimary pl-10 py-6 px-6 relative">
-                        <h2 className="text-4xl font-medium mb-4">Design Skills</h2>
-                        <h2 className="text-xl font-light mb-4">Highlight My Expertise in:</h2>
+                        <h2 className="text-4xl font-medium mb-4 select-none">Design Skills</h2>
+                        <h2 className="text-xl font-light mb-4 select-none">Highlight My Expertise in:</h2>
                     </div>
-                    <div className="skillOrder font-semibold">03.-</div>
+                    <div className="skillOrder font-semibold select-none">03.-</div>
                 </div>
                 <div className="w-2/3  flex justify-between items-center">
                     {languageSkillData.map((skill, index) => (

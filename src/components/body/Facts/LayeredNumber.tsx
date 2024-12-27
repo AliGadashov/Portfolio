@@ -14,6 +14,7 @@ const LayeredNumber: React.FC<LayeredNumberProps> = ({ value }) => {
                     transform: 'translate(-14px, -6px)',
                     WebkitTextStroke: '1px black',
                     WebkitTextFillColor: 'transparent',
+                    userSelect: 'none'
                 }}
             >
                 {value}
@@ -24,11 +25,12 @@ const LayeredNumber: React.FC<LayeredNumberProps> = ({ value }) => {
                     transform: 'translate(-7px, -3px)',
                     WebkitTextStroke: '1px black',
                     WebkitTextFillColor: 'transparent',
-                }}
+                    userSelect: 'none'
+            }}
             >
                 {value}
             </div>
-            <div style={{ position: 'relative' }}>
+            <div style={{ position: 'relative', userSelect: 'none'  }}>
                 {value}
             </div>
         </div>

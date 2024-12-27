@@ -9,7 +9,7 @@ const ServiceCard = ({index, skill, details}) => {
             {/* Animasiya ilə dairə */}
             <div
                 className="animationCircle border border-textHover rounded-full flex items-center justify-center relative stop-animation hover:cursor-pointer">
-                <span className="text-4xl font-medium">{index}</span>
+                <span className="text-4xl font-medium select-none">{index}</span>
                 <div
                     className="absolute border border-textHover rounded-full animate-expandBorderForCircle delay-0"></div>
                 <div
@@ -19,13 +19,13 @@ const ServiceCard = ({index, skill, details}) => {
             </div>
 
             <div className="mt-8">
-                <span className="text-xl font-light text-nowrap">{skill}</span>
+                <span className="text-xl font-light text-nowrap select-none">{skill}</span>
                 <div className="bg-textHover w-full h-px mt-2"></div>
             </div>
 
             <ul className="mt-4 list-disc ">
                 {details.map((detail, idx) => (
-                    <li key={idx} className="mt-2 flex items-center font-extralight">
+                    <li key={idx} className="mt-2 flex items-center font-extralight select-none">
                          <span className="mr-2 text-white">
                             <MdKeyboardDoubleArrowRight/>
                          </span>

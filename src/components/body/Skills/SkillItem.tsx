@@ -10,8 +10,8 @@ const SkillItem: React.FC<SkillItemProps> = ({ title, percentage }) => {
     return (
         <div>
             <div className="flex flex-row justify-between w-full mb-2">
-                <h2 className="text-[1rem] font-light">{title}</h2>
-                <span className="text-[1rem]  font-light">{percentage}%</span>
+                <h2 className="text-[1rem] font-light select-none">{title}</h2>
+                <span className="text-[1rem]  font-light select-none">{percentage}%</span>
             </div>
             <ProgressBar percentage={percentage}/>
         </div>

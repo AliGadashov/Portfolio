@@ -59,11 +59,11 @@ const Aside = () => {
                                     }}
                                 ></span>
                                 <span
-                                    className="ml-3 mr-3 pl-8 text-black text-lg font-poppins font-semibold uppercase leading-[40px] z-10 group-hover:text-textHover transition-colors duration-300"
+                                    className="select-none ml-3 mr-3 pl-8 text-black text-lg font-poppins font-semibold uppercase leading-[40px] z-10 group-hover:text-textHover transition-colors duration-300"
                                 >
                         {String(index + 1).padStart(2, '0')}
                     </span>
-                                <a className="relative text-black text-sm font-poppins font-semibold uppercase leading-[40px] flex items-center z-10 group-hover:text-textHover transition-colors duration-300">
+                                <a className="select-none relative text-black text-sm font-poppins font-semibold uppercase leading-[40px] flex items-center z-10 group-hover:text-textHover transition-colors duration-300">
                                     {item}
                                 </a>
                             </div>

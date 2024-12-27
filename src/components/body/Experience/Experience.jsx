@@ -27,8 +27,8 @@ const Experience = () => {
             className="flex flex-col justify-center gap-8">
             {/* Upper Section */}
             <div className="text-start border-l-2 border-black pl-10 py-6 px-6 relative" data-content="Experiences">
-                <h2 className="text-2xl font-bold mb-4">Highlight My key Experiences</h2>
-                <h2 className="text-7xl font-bold mb-4">My Experience</h2>
+                <h2 className="text-2xl font-bold mb-4 select-none">Highlight My key Experiences</h2>
+                <h2 className="text-7xl font-bold mb-4 select-none">My Experience</h2>
             </div>
 
             <div className="mt-4 flex flex-col gap-16 border-l-2 border-primary ">

@@ -66,8 +66,8 @@ const Services = () => {
             className="flex flex-col justify-center gap-8">
             {/* Upper Section */}
             <div className="text-start border-l-2 border-black pl-10 py-6 px-6 relative" data-content="My Services">
-                <h2 className="text-2xl font-bold mb-4">How I can help your next project</h2>
-                <h2 className="text-7xl font-bold mb-4">What I do</h2>
+                <h2 className="text-2xl font-bold mb-4 select-none">How I can help your next project</h2>
+                <h2 className="text-7xl font-bold mb-4 select-none">What I do</h2>
             </div>
 
             <Slider {...settings} className="services-slider">

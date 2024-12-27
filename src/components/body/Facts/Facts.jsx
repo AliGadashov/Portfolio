@@ -10,8 +10,8 @@ const Facts = () => {
             className="flex flex-col justify-center gap-8">
             {/* Upper Section */}
             <div className="text-start border-l-2 border-black pl-10 py-6 px-6 relative" data-content="My Facts">
-                <h2 className="text-2xl font-bold mb-4">Some interesting facts about me</h2>
-                <h2 className="text-7xl font-bold mb-4">Fun Facts</h2>
+                <h2 className="text-2xl font-bold mb-4 select-none">Some interesting facts about me</h2>
+                <h2 className="text-7xl font-bold mb-4 select-none">Fun Facts</h2>
             </div>
 
             <div className="mt-4 flex flex-col gap-16">

@@ -12,7 +12,8 @@ module.exports = {
         bgColor: "#8d93ab",
         primary: "#791f89",
         darkPrimary: "#37113e",
-        textHover: "#c4c5c3"
+        textHover: "#c4c5c3",
+        loadingBg: "#f1d6ad"
       }
     },
   },

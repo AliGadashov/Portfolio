@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const SVGComponent = (props) => (
+const HomePC = (props) => (
     <div style={{width: 500}}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -11700,4 +11700,4 @@ const SVGComponent = (props) => (
         </svg>
     </div>
 );
-export default SVGComponent;
+export default HomePC;

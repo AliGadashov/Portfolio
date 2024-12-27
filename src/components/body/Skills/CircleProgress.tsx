@@ -49,13 +49,14 @@ const CircleProgress: React.FC<CircleProgressProps> = ({ percentage, label }) =>
                     fill="#000"
                     className="font-medium"
                     transform="rotate(90, 70, 70)"
+                    style={{ userSelect: 'none' }}
                 >
                     {percentage}%
                 </text>
             </svg>
             {/* Aşağıdakı düymə */}
             <button
-                className="mt-4 py-2 px-6 border border-darkPrimary text-black rounded-full transition-all duration-500 hover:bg-darkPrimary hover:text-textHover">
+                className="cursor-auto mt-4 py-2 px-6 border border-darkPrimary text-black rounded-full transition-all duration-500 hover:bg-darkPrimary hover:text-textHover select-none">
                 {label}
             </button>
 
