@@ -17,12 +17,20 @@ const Aside = () => {
         document.documentElement.style.setProperty('--param-value', `${maxLength}px`);
     }, [maxLength]);
 
+    // const handleClick = (sectionId) => {
+    //     const section = document.getElementById(sectionId);
+    //     if (section) {
+    //         section.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // };
+
     const handleClick = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+            section.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     };
+
 
     return (
         <aside className="bg-bgColor pl-2 flex items-center h-screen">

@@ -4,6 +4,7 @@ import About from "./body/About/About";
 import Skills from "./body/Skills/Skills";
 import Services from "./body/Services/Services";
 import Facts from "./body/Facts/Facts";
+import Experience from "./body/Experience/Experience";
 
 const BodyContent = () => {
     return (
@@ -18,6 +19,7 @@ const BodyContent = () => {
                     <Services/>
                     <Skills/>
                     <Facts/>
+                    <Experience/>
                 </div>
             </section>
         </div>

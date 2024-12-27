@@ -1,8 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 const SectionWrapper = ({children, className, name}) => {
-
-
     const [headerHeight, setHeaderHeight] = useState(0);
 
     useEffect(() => {
@@ -11,22 +9,21 @@ const SectionWrapper = ({children, className, name}) => {
             setHeaderHeight(header.offsetHeight);
         }
     }, []);
+
     return (
         <>
-            <div id={name}
-                 style={{height: `${headerHeight}px`}}
-            ></div>
+            <div id={name} style={{ height: `${headerHeight}px` }}></div>
             <section
                 style={{
-                    height: `calc(100vh - ${headerHeight}px)`,
+                    minHeight: `calc(100vh - ${headerHeight}px)`, // Burada minimum 100vh
+                    height: `auto`, // dinamik hündürlük
                 }}
-            className={className}
+                className={className}
             >
                 {children}
             </section>
         </>
-    )
-        ;
+    );
 };
 
 export default SectionWrapper;
