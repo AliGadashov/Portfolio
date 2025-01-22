@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Chapter from "./Chapter/Chapter";
 
 const SectionWrapper = ({children, className, name}) => {
     const [headerHeight, setHeaderHeight] = useState(0);
@@ -15,13 +16,15 @@ const SectionWrapper = ({children, className, name}) => {
             <div id={name} style={{ height: `${headerHeight}px` }}></div>
             <section
                 style={{
-                    minHeight: `calc(100vh - ${headerHeight}px)`, // Burada minimum 100vh
-                    height: `auto`, // dinamik hündürlük
+                    minHeight: `calc(100vh - ${headerHeight}px)`,
+                    height: `auto`,
                 }}
                 className={className}
             >
                 {children}
             </section>
+
+            <Chapter currentSection={name} />
         </>
     );
 };

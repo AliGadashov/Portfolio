@@ -37,14 +37,14 @@ const Aside = () => {
                                     marginTop: "3px",
                                     marginBottom: "3px",
                                 }}
-                                onClick={() => handleClick(item.toUpperCase())} // Handle click to scroll to section
+                                onClick={() => handleClick(item.toUpperCase())}
                             >
-                    <span
-                        className="absolute left-0 top-0 w-0 h-full bg-darkPrimary group-hover:w-[calc(var(--param-value))] transition-all ease-out duration-1000"
-                        style={{
-                            opacity: 0.4,
-                        }}
-                    ></span>
+                                <span
+                                    className="absolute left-0 top-0 w-0 h-full bg-darkPrimary group-hover:w-[calc(var(--param-value))] transition-all ease-out duration-1000"
+                                    style={{
+                                        opacity: 0.4,
+                                    }}
+                                ></span>
                                 <span
                                     className="absolute top-0 w-0 h-full bg-[#0e0e0f] group-hover:w-0.5 transition-all ease-in-out duration-200"
                                     style={{

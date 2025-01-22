@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Header = () => {
     const scrollToTop = () => {
@@ -6,6 +6,12 @@ const Header = () => {
             top: 0,
             behavior: 'smooth',
         });
+    };
+
+    const [isEnglish, setIsEnglish] = useState(true);
+
+    const toggleLanguage = () => {
+        setIsEnglish(!isEnglish);
     };
 
     return (
@@ -17,6 +23,21 @@ const Header = () => {
                 >
                     Ali Gadashov
                 </h1>
+                <div className="flex items-center px-24">
+                    <button
+                        onClick={toggleLanguage}
+                        className="flex items-center text-xl cursor-pointer"
+                    >
+                        {/*<span>{isEnglish ? 'Eng' : 'Aze'}</span>*/}
+                        <div className="ml-2">
+                            <img
+                                src={isEnglish ? '/en.jpg' : '/az.png'}
+                                alt={isEnglish ? 'English' : 'Azerbaijani'}
+                                className="w-6 h-6 rounded-full filter brightness-75 contrast-75"
+                            />
+                        </div>
+                    </button>
+                </div>
             </div>
         </header>
     );

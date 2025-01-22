@@ -5,6 +5,7 @@ import Skills from "./body/Skills/Skills";
 import Services from "./body/Services/Services";
 import Facts from "./body/Facts/Facts";
 import Experience from "./body/Experience/Experience";
+import Contact from "./body/Contact/Contact";
 
 const BodyContent = () => {
     return (
@@ -20,6 +21,7 @@ const BodyContent = () => {
                     <Skills/>
                     <Facts/>
                     <Experience/>
+                    <Contact/>
                 </div>
             </section>
         </div>
