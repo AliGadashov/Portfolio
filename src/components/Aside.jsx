@@ -17,13 +17,6 @@ const Aside = () => {
         document.documentElement.style.setProperty('--param-value', `${maxLength}px`);
     }, [maxLength]);
 
-    // const handleClick = (sectionId) => {
-    //     const section = document.getElementById(sectionId);
-    //     if (section) {
-    //         section.scrollIntoView({ behavior: 'smooth' });
-    //     }
-    // };
-
     const handleClick = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
