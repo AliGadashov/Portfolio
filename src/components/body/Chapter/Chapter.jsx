@@ -30,18 +30,18 @@ const Chapter = ({ currentSection }) => {
 
     return (
         <div className="w-1/4 flex items-center gap-4 p-2.5 mb-10 mt-6">
-            <span className="text-lg text-gray-800 select-none">
+            <span className="text-lg text-gray-800 cursor-default">
                 {currentPage}/{pageMap.length}
             </span>
             {nextSectionDetails && (
-                <div className="flex flex-row items-center cursor-pointer pr-3">
+                <div className="flex flex-row items-center cursor-pointer pr-3 group">
                     <button
                         onClick={() => scrollToSection(nextSectionDetails.id)}
                         className="flex items-center px-3 py-2 rounded text-black text-xl select-none"
                     >
                         Next Chapter
                     </button>
-                    <PiArrowElbowRightDown className="mt-3 text-xl" />
+                    <PiArrowElbowRightDown className="mt-3 text-xl group-hover:animate-bounce-icon" />
                 </div>
             )}
         </div>

@@ -6,6 +6,9 @@ import Services from "./body/Services/Services";
 import Facts from "./body/Facts/Facts";
 import Experience from "./body/Experience/Experience";
 import Contact from "./body/Contact/Contact";
+import Projects from "./body/Projects/Projects";
+import Blogs from "./body/Blogs/Blogs";
+import Testimonial from "./body/Testimonial/Testimonial";
 
 const BodyContent = () => {
     return (
@@ -21,6 +24,9 @@ const BodyContent = () => {
                     <Skills/>
                     <Facts/>
                     <Experience/>
+                    <Projects/>
+                    <Blogs/>
+                    <Testimonial/>
                     <Contact/>
                 </div>
             </section>

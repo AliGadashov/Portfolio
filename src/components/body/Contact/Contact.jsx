@@ -43,15 +43,15 @@ const Contact = () => {
             </div>
 
             <div className="flex items-center flex-row w-1/6 align-middle justify-between ">
-                <button className="w-14 h-14 p-4 text-5xl border-black border rounded-full flex justify-center items-center transition hover:bg-black text-darkPrimary hover:text-bgColor ">
+                <a href="https://www.linkedin.com/in/alasgar-gadashov/" className="w-14 h-14 p-4 text-5xl border-black border rounded-full flex justify-center items-center transition hover:bg-black text-darkPrimary hover:text-bgColor ">
                     <CiFacebook/>
-                </button>
-                <button className="w-14 h-14 p-4 text-5xl border-black border rounded-full flex justify-center items-center transition hover:bg-black text-darkPrimary hover:text-bgColor">
+                </a>
+                <a href="https://www.linkedin.com/in/alasgar-gadashov/" className="w-14 h-14 p-4 text-5xl border-black border rounded-full flex justify-center items-center transition hover:bg-black text-darkPrimary hover:text-bgColor">
                     <CiLinkedin/>
-                </button>
-                <button className="w-14 h-14 p-4 text-5xl border-black border rounded-full flex justify-center items-center transition hover:bg-black text-darkPrimary hover:text-bgColor">
+                </a>
+                <a href="https://www.linkedin.com/in/alasgar-gadashov/" className="w-14 h-14 p-4 text-5xl border-black border rounded-full flex justify-center items-center transition hover:bg-black text-darkPrimary hover:text-bgColor">
                     <FaXTwitter/>
-                </button>
+                </a>
             </div>
         </div>
 

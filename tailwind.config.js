@@ -4,16 +4,30 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   theme: {
     extend: {
+
+      keyframes: {
+        bounceIcon: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-5px)' },
+        },
+      },
+
+      animation: {
+        'bounce-icon': 'bounceIcon 0.5s ease-in-out infinite',
+      },
+
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
         serif: ['Noto Serif', 'serif'],
       },
+
       colors:{
         bgColor: "#8d93ab",
         primary: "#791f89",
         darkPrimary: "#37113e",
         textHover: "#c4c5c3",
         loadingBg: "#f1d6ad"
+
       }
     },
   },

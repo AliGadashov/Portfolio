@@ -24,7 +24,7 @@ const SectionWrapper = ({children, className, name}) => {
                 {children}
             </section>
 
-            <Chapter currentSection={name} />
+            <Chapter  currentSection={name} />
         </>
     );
 };
