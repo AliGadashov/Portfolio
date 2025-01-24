@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Top = () => {
+
     const [headerHeight, setHeaderHeight] = useState(0);
 
     useEffect(() => {
@@ -27,7 +28,7 @@ const Top = () => {
     const contact = "CONTACT"
 
     return (
-        <SectionWrapper name={"TOP"} className="flex flex-row items-center justify-between text-black">
+        <SectionWrapper name={"TOP"} className=" mt-20 xl:mt-0 flex flex-col xl:flex-row items-center justify-between text-black">
             {/*Top text*/}
             <div data-aos="fade-right" data-aos-duration="1500">
                 <p className="text-4xl font-semibold select-none">Hello, I'm a</p>
@@ -60,6 +61,7 @@ const Top = () => {
             <div data-aos="zoom-in" data-aos-duration="1500">
                 <HomePC />
             </div>
+
         </SectionWrapper>
     );
 };

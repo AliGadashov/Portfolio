@@ -4,19 +4,18 @@ import {FiMail, FiMapPin, FiPhoneCall} from "react-icons/fi";
 import {CiFacebook, CiLinkedin} from "react-icons/ci";
 
 import {FaXTwitter} from "react-icons/fa6";
+import SectionHeader from "../SectionHeader";
+import React from "react";
 const Contact = () => {
 
     return (<SectionWrapper
         name={"CONTACT"}
         className="flex flex-col justify-center gap-8">
         {/* Upper Section */}
-        <div className="text-start border-l-2 border-black pl-10 py-6 px-6 relative select-none"
-             data-content="Contact">
-            <h2 className="text-2xl font-bold mb-4 select-none">Let's Get in touch</h2>
-            <h2 className="text-7xl font-bold mb-4 select-none">Contact me</h2>
-        </div>
 
-        <div className="flex flex-row items-center w-full justify-between ">
+        <SectionHeader headerContent={"Contact"} headerTitle={"Let's Get in touch"} headerMainTitle={"Contact me"} />
+
+        <div className="flex flex-col lg:flex-row gap-10 lg:items-center w-full justify-between ">
             <div className="flex flex-row align-middle gap-5">
                 <div className="w-20 h-20 p-7 text-5xl border-black border text-darkPrimary rounded-full flex justify-center items-center">
                     <FiPhoneCall/>

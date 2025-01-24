@@ -20,3 +20,11 @@ html {
     color: rgba(0, 0, 0, 0.05);
     white-space: nowrap;
 }
+
+@media (max-width: 992px) {
+    .text-start::before {
+        top: -3rem;
+        font-size: 5rem;
+
+    }
+}

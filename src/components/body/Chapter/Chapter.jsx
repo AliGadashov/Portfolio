@@ -30,6 +30,7 @@ const Chapter = ({ currentSection }) => {
 
     return (
         <div className="w-1/4 flex items-center gap-4 p-2.5 mb-10 mt-6">
+
             <span className="text-lg text-gray-800 cursor-default">
                 {currentPage}/{pageMap.length}
             </span>

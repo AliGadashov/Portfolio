@@ -17,7 +17,7 @@ const BodyContent = () => {
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
             <section>
-                <div className="flex flex-col px-24">
+                <div className="flex flex-col xl:px-24">
                     <Top/>
                     <About/>
                     <Services/>

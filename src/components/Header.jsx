@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Header = () => {
+const Header = ({setOpenNav}) => {
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -23,7 +23,10 @@ const Header = () => {
                 >
                     Ali Gadashov
                 </h1>
+                <button className="md:hidden" onClick={()=>setOpenNav(prev=> !prev)}>ok</button>
+
                 <div className="flex items-center px-24">
+
                     <button
                         onClick={toggleLanguage}
                         className="flex items-center text-xl cursor-pointer"

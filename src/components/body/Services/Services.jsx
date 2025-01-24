@@ -5,6 +5,7 @@ import SectionWrapper from "../SectionWrapper";
 import ServiceCard from "./ServiceCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SectionHeader from "../SectionHeader";
 
 
 const Services = () => {
@@ -65,10 +66,8 @@ const Services = () => {
             name={"MY SERVICES"}
             className="flex flex-col justify-center gap-8">
             {/* Upper Section */}
-            <div className="text-start border-l-2 border-black pl-10 py-6 px-6 relative" data-content="My Services">
-                <h2 className="text-2xl font-bold mb-4 select-none">How I can help your next project</h2>
-                <h2 className="text-7xl font-bold mb-4 select-none">What I do</h2>
-            </div>
+
+            <SectionHeader headerContent={"My Services"} headerTitle={"How I can help your next project"} headerMainTitle={"What I do"} />
 
             <Slider {...settings} className="services-slider">
                 {serviceDetails.map((service) => (

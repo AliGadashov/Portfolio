@@ -1,25 +1,23 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import "./About.css"
 import SectionWrapper from "../SectionWrapper";
+import SectionHeader from "../SectionHeader";
 
 const About = () => {
-
 
     return (
         <SectionWrapper
             name={"ABOUT ME"}
             className="flex flex-col justify-center gap-8">
             {/* Upper Section */}
-            <div className="text-start border-l-2 border-black pl-10 py-6 px-6 relative select-none" data-content="About Me">
-                <h2 className="text-2xl font-bold mb-4 select-none">Some Word About Me</h2>
-                <h2 className="text-7xl font-bold mb-4 select-none">Know Me More</h2>
-            </div>
 
-            <div className="flex flex-row gap-20">
+            <SectionHeader headerContent={"About Me"} headerTitle={"Some Word About Me"} headerMainTitle={"Know Me More"} />
+
+            <div className="flex flex-col  xl:flex-row gap-20">
                 <div className="flex flex-col gap-8">
 
                     <div>
-                        <h2 className="text-4xl font-medium mb-4 select-none">I'm Ali Gadashov, a Web Developer</h2>
+                        <h2 className="text-4xl font-medium mb-4 select-none" >I'm Ali Gadashov, a Web Developer</h2>
                         <p className="text-xl py-2 text-black select-none">I'm a designer & developer with a passion for web
                             design. I
                             enjoy developing simple, clean and slick websites that provide real value to the end
