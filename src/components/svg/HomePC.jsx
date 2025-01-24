@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const HomePC = (props) => (
-    <div style={{width: 500}}>
+    <div style={{width: 350}}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 3879.7732 4661.1069"

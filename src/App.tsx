@@ -41,7 +41,7 @@ const App = () => {
                             <BodyContent />
                         </main>
 
-                        <aside className={`w-2/3  transition-all duration-700 md:w-1/4  fixed md:static right-0   z-30 ${isWideScreen || openNav ? 'translate-x-0': 'translate-x-[100%]'}`}>
+                        <aside className={`w-2/3 transition-all duration-700 md:w-1/3 lg:w-1/4 fixed z-30 md:static right-0 ${isWideScreen || openNav ? 'translate-x-0': 'translate-x-[100%]'}`}>
                             <Aside />
                         </aside>
                     </div>

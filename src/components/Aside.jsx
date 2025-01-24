@@ -62,15 +62,15 @@ const Aside = () => {
                             </div>
                         </li>
                     ))}
-                    <div
-                        className="flex flex-col pl-8 space-y-0 ml-3 mr-3 py-6 text-black text-lg font-poppins leading-[30px] group">
-            <span className="cursor-pointer transition-colors duration-300">
-                ali.gadashovv@gmail.com
-            </span>
-                        <span className="cursor-pointer transition-colors duration-300">
-                +994 55 826 62 82
-            </span>
-                    </div>
+            {/*        <div*/}
+            {/*            className="flex flex-col pl-8 space-y-0 ml-3 mr-3 py-6 text-black text-lg font-poppins leading-[30px] group">*/}
+            {/*<span className="cursor-pointer transition-colors duration-300">*/}
+            {/*    ali.gadashovv@gmail.com*/}
+            {/*</span>*/}
+            {/*            <span className="cursor-pointer transition-colors duration-300">*/}
+            {/*    +994 55 826 62 82*/}
+            {/*</span>*/}
+            {/*        </div>*/}
                 </ul>
             </div>
 

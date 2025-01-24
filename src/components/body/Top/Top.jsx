@@ -28,9 +28,9 @@ const Top = () => {
     const contact = "CONTACT"
 
     return (
-        <SectionWrapper name={"TOP"} className=" mt-20 xl:mt-0 flex flex-col xl:flex-row items-center justify-between text-black">
+        <SectionWrapper name={"TOP"} className="mt-10 flex flex-col items-center gap-24 xl:justify-between text-black xl:mt-0 xl:gap-10 xl:flex-row ">
             {/*Top text*/}
-            <div data-aos="fade-right" data-aos-duration="1500">
+            <div className="flex flex-col items-center text-center xl:items-start xl:text-start" data-aos="fade-right" data-aos-duration="1500">
                 <p className="text-4xl font-semibold select-none">Hello, I'm a</p>
                 <h1 className="text-6xl font-bold my-4 select-none">
                     <Typewriter
@@ -47,18 +47,18 @@ const Top = () => {
                 <div className="flex space-x-4">
                     <button
                         onClick={() => handleClick(project.toUpperCase())}
-                        className=" cursor-pointer bg-black text-white py-3 px-7 rounded-full font-medium text-lg select-none">
+                        className=" cursor-pointer bg-black text-white py-3 px-7 rounded-full font-medium text-sm select-none md:text-lg custom-xl-top:px-5">
                         View My Work
                     </button>
                     <button
                         onClick={() => handleClick(contact.toUpperCase())}
-                        className="cursor-pointer bg-primary text-textHover py-3 px-7 rounded-full font-medium text-lg border border-primary hover:bg-darkPrimary hover:text-white transition select-none">
+                        className="cursor-pointer bg-primary text-textHover py-3 px-7 rounded-full font-medium text-sm border border-primary hover:bg-darkPrimary hover:text-white transition select-none md:text-lg custom-xl-top:px-5">
                         Contact Me
                     </button>
                 </div>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="1500">
+            <div className="" data-aos="zoom-in" data-aos-duration="1500">
                 <HomePC />
             </div>
 

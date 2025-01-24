@@ -13,7 +13,7 @@ const About = () => {
 
             <SectionHeader headerContent={"About Me"} headerTitle={"Some Word About Me"} headerMainTitle={"Know Me More"} />
 
-            <div className="flex flex-col  xl:flex-row gap-20">
+            <div className="flex flex-col gap-20 items-center xl:flex-row ">
                 <div className="flex flex-col gap-8">
 
                     <div>
@@ -26,7 +26,7 @@ const About = () => {
                             work within time and budget which meets client's requirements is our moto.</p>
                     </div>
                     {/* Lower Section */}
-                    <div className="flex flex-row justify-between ">
+                    <div className="flex flex-col gap-5 justify-between custom-ls-about:flex-row md:flex-row custom-lg-about:flex-col custom-xl-about:flex-col">
                         {/*Email*/}
                         <div className="text-lg font-semibold">
                             <p className="select-none">Email:</p>
@@ -48,10 +48,10 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row justify-between gap-12 md:w-2/3">
+                <div>
                     {/* Experience */}
                     <div
-                        className="experience flex flex-col items-center justify-center px-20 w-full box-border bg-darkPrimary text-white font-semibold border-black border z-30">
+                        className="experience flex flex-col items-center justify-center p-20 box-border bg-darkPrimary text-white font-semibold border-black border z-20">
                         <span className="text-9xl select-none" >3</span>
                         <p className="text-lg text-nowrap select-none">Years of Experience</p>
                     </div>

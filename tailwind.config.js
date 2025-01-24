@@ -5,6 +5,16 @@ module.exports = {
   theme: {
     extend: {
 
+      screens: {
+        'custom-xl-top': { max: '1350px', min: '1280px' },
+        'custom-xl-about': { max: '1610px', min: '1280px' },
+        'custom-lg-about': { max: '900px', min: '768px' },
+        'custom-ls-about': { max: '768px', min: '600px' },
+        'custom-md-skill': { min: '870px'},
+        'custom-lg-skill': { min: '1150px'},
+        'custom-sm-sh': { max: '450px'},
+      },
+
       keyframes: {
         bounceIcon: {
           '0%, 100%': { transform: 'translateY(0)' },

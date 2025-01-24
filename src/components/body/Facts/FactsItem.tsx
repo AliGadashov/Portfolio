@@ -8,7 +8,7 @@ interface FactsItemProps {
 
 const FactsItem: React.FC<FactsItemProps> = ({ title, count }) => {
     return (
-        <div className="flex flex-col w-1/4">
+        <div className="flex flex-col items-center text-center w-1/4">
             <LayeredNumber value={count}/>
             <div className="w-full h-0.5 bg-darkPrimary"></div>
             <div className="mt-3 text-2xl text-black select-none">{title}</div>

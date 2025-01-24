@@ -4,7 +4,7 @@ import {MdKeyboardDoubleArrowRight} from "react-icons/md";
 const ServiceCard = ({index, skill, details}) => {
     return (
         <div
-            className="card py-10  flex flex-col items-start justify-center px-10 w-full box-border bg-darkPrimary text-white font-semibold border-black border z-30">
+            className="card py-10 items-center flex flex-col items-start justify-center px-10 w-full box-border bg-darkPrimary text-white font-semibold border-black border z-30">
 
             {/* Animasiya ilə dairə */}
             <div
@@ -18,8 +18,8 @@ const ServiceCard = ({index, skill, details}) => {
                     className="absolute border border-textHover rounded-full animate-expandBorderForCircle delay-400"></div>
             </div>
 
-            <div className="mt-8">
-                <span className="text-xl font-light text-nowrap select-none">{skill}</span>
+            <div className="mt-8 text-center">
+                <span className="text-xl  font-light select-none">{skill}</span>
                 <div className="bg-textHover w-full h-px mt-2"></div>
             </div>
 

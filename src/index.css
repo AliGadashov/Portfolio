@@ -19,12 +19,41 @@ html {
     font-family: 'Noto Serif', serif;
     color: rgba(0, 0, 0, 0.05);
     white-space: nowrap;
+
 }
 
-@media (max-width: 992px) {
+@media (min-width: 1180px) and (max-width: 1660px) {
     .text-start::before {
-        top: -3rem;
-        font-size: 5rem;
+        top: -5rem;
+        font-size: 7rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1180px) {
+    .text-start::before {
+        top: -4rem;
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-start::before {
+        top: -4rem;
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .text-start::before {
+        top: -2rem;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-start::before {
+        top: -1rem;
+        font-size: 3rem;
 
     }
 }
