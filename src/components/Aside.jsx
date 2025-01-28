@@ -6,7 +6,7 @@ const menuItems = [
     'TESTIMONIALS', 'CONTACT'
 ];
 
-const Aside = () => {
+const Aside = ({setOpenNav , setIsMenuOpen}) => {
     const [maxLength, setMaxLength] = useState(0);
 
     useEffect(() => {
@@ -21,12 +21,13 @@ const Aside = () => {
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: "smooth", block: "start" });
+            setIsMenuOpen(false)
+            setOpenNav(prev=>!prev)
         }
     };
 
-
     return (
-        <aside className="bg-bgColor pl-2 flex items-center h-screen">
+        <aside onClick={(e) => e.stopPropagation()} className="bg-bgColor pl-2 flex items-center h-screen">
             <div className="w-full border-l-2 border-primary">
                 <ul className="flex flex-col items-start space-y-1">
                     {menuItems.map((item, index) => (
@@ -62,15 +63,6 @@ const Aside = () => {
                             </div>
                         </li>
                     ))}
-            {/*        <div*/}
-            {/*            className="flex flex-col pl-8 space-y-0 ml-3 mr-3 py-6 text-black text-lg font-poppins leading-[30px] group">*/}
-            {/*<span className="cursor-pointer transition-colors duration-300">*/}
-            {/*    ali.gadashovv@gmail.com*/}
-            {/*</span>*/}
-            {/*            <span className="cursor-pointer transition-colors duration-300">*/}
-            {/*    +994 55 826 62 82*/}
-            {/*</span>*/}
-            {/*        </div>*/}
                 </ul>
             </div>
 

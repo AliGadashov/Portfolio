@@ -13,9 +13,9 @@ import Testimonial from "./body/Testimonial/Testimonial";
 const BodyContent = () => {
     return (
         <div
-            className="bg-bgColor text-black px-6 overflow-y-scroll "
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            className="bg-bgColor text-black px-6 "
         >
+
             <section>
                 <div className="flex flex-col xl:px-24">
                     <Top/>

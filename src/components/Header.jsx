@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 
-const Header = ({ setOpenNav }) => {
+const Header = ({ setOpenNav ,isMenuOpen , setIsMenuOpen}) => {
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -11,7 +11,6 @@ const Header = ({ setOpenNav }) => {
     };
 
     const [isEnglish, setIsEnglish] = useState(true);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleLanguage = () => {
         setIsEnglish(!isEnglish);
     };
@@ -25,13 +24,13 @@ const Header = ({ setOpenNav }) => {
         <header className="bg-bgColor bg-opacity-50 backdrop-filter backdrop-blur-sm text-black py-4 px-6 firefox:bg-opacity-50">
             <div className="flex justify-between items-center">
                 <h1
-                    className="text-xl font-bold pl-12 sm:text-2xl md:text-4xl md:pl-24 select-none cursor-pointer text-nowrap"
+                    className="text-xl font-bold pl-5 sm:text-2xl md:text-4xl md:pl-20 select-none cursor-pointer text-nowrap"
                     onClick={scrollToTop}
                 >
                     Ali Gadashov
                 </h1>
 
-                <div className="flex flex-row gap-5">
+                <div className="flex flex-row gap-5 pr-5 md:pr-20">
                     <div className="flex items-center">
                         <button
                             onClick={toggleLanguage}
@@ -47,7 +46,7 @@ const Header = ({ setOpenNav }) => {
                         </button>
                     </div>
                     <button
-                        className="text-2xl pr-12 md:pr-24 md:hidden"
+                        className="text-2xl md:hidden"
                         onClick={toggleMenu}
                     >
                         {isMenuOpen ? <RxCross2 /> : <RxHamburgerMenu />}
